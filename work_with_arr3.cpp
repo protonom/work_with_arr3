@@ -1,11 +1,13 @@
 ﻿#include <iostream>
+#include <ctime>
 
 void fill_arr(int* arr, int size) 
 {
+	srand(time(NULL));
 	int i = 0;
 	for (i; i < size; i++) 
 	{
-		arr[i] = i * 5 + 100;
+		arr[i] = rand() % 100;
 	}
 }
 
